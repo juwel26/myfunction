@@ -1,0 +1,24 @@
+
+<%- include("layout/header.ejs") %>
+
+    <main>
+        <form action=" " method="post">
+            <input type="text" placeholder="add anything" name="planguse">
+            <button  type="submit"> add</button>
+        </form>
+
+        <ul>
+       <% if(plname){ %>    
+                
+                <% for( let x= 0; x < plname.length; x++ ) { %>
+                <li><%= plname[x] %></li>
+                <% } %>
+
+            <%  }else{%>
+                <p>no data found 😟</p>
+            <%}  %>
+        </ul>
+
+    </main>
+
+    <%- include("layout/footer.ejs") %>
