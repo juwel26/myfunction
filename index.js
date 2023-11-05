@@ -13,6 +13,9 @@ app.get('/', (req, res) => {
 app.get('/contact', (req, res) => {
   res.render("contact",{});
 })
+app.get('/update', (req, res) => {
+  res.render("update",{});
+})
 
 app.post('/', (req, res) => {
   const planguse = req.body.planguse
